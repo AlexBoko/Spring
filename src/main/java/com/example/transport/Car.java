@@ -1,6 +1,5 @@
 package com.example.transport;
 
-import com.example.transport.Transport;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -31,6 +30,7 @@ public class Car extends Transport {
     public void setModel(String model) {
         this.model = model;
     }
+
     @Override
     public String getTransportType() {
         return "Car";
@@ -50,5 +50,4 @@ public class Car extends Transport {
     public String toString() {
         return "Car [brand=" + brand + ", model=" + model + "]";
     }
-
 }

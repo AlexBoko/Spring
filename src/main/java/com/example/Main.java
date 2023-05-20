@@ -9,9 +9,10 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // Получение бинов из контекста
-        Driver carDriver = context.getBean("driver", Driver.class);
-        Driver busDriver = context.getBean("driver", Driver.class);
-        Driver pickupDriver = context.getBean("driver", Driver.class);
+        Driver carDriver = context.getBean("carDriver", Driver.class);
+        Driver busDriver = context.getBean("busDriver", Driver.class);
+        Driver pickupDriver = context.getBean("pickupDriver", Driver.class);
+
 
 
         // Вывод информации о бинах Driver
